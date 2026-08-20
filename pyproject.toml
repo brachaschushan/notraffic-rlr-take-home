@@ -1,0 +1,14 @@
+[build-system]
+requires = ["setuptools>=61.0"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "rlr"
+version = "0.1.0"
+description = "Red-light-runner stop-line crossing detection (NoTraffic take-home, Part 1)"
+readme = "README.md"
+requires-python = ">=3.10"
+dependencies = []
+
+[tool.setuptools]
+packages = ["rlr"]

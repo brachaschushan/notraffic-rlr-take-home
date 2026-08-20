@@ -4,8 +4,36 @@ Detects the timestamp at which a vehicle's trajectory crosses a stop-line segmen
 
 ## Install / setup
 
-Python 3.10+ (developed and tested on 3.14). Standard library only - no dependencies to
-install.
+Requires Python 3.10+ (developed and tested on 3.14). Standard library only - no
+third-party packages to install.
+
+1. Clone the repository and move into it:
+
+   ```bash
+   git clone https://github.com/brachaschushan/notraffic-rlr-take-home.git
+   cd notraffic-rlr-take-home
+   ```
+
+2. (Optional but recommended) create and activate a virtual environment:
+
+   ```bash
+   python -m venv .venv
+   source .venv/bin/activate      # Windows: .venv\Scripts\activate
+   ```
+
+3. No `pip install` step is required to run `main.py` or the tests - both are run directly
+   from the repository root (see below) and the `rlr` package is imported from there.
+
+   If you'd rather have `rlr` installed into the environment (e.g. to `import rlr` from
+   outside this directory), install it in editable mode using the included
+   `pyproject.toml`:
+
+   ```bash
+   pip install -e .
+   ```
+
+   This has no third-party dependencies to pull in - `dependencies = []` in
+   `pyproject.toml` - it only registers the local `rlr` package.
 
 ## Run the worked-example driver
 
